@@ -33,7 +33,7 @@ console.log('-----');
 
 console.log('Números impares entre 10 e 20:');
 while (num <= 20) {
-    if (num % 2 === 1)
+    if (num % 2 !== 0)
         console.log(num);
 
     num++;
