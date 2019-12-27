@@ -111,7 +111,7 @@
     */
 
     function showOperationMessage(op, num1, num2) {
-        return 'A operação ' + num1 + ' ' + op + ' ' + num2 + ' = ';
+        return 'A operação ' + num1 + ' ' + op + ' ' + num2 + ' =';
     }
 
     /*
@@ -168,17 +168,16 @@
         console.log(showErrorMessage(operationSignal));
     }
 
-    // console.log(showOperationMessage(operationSignal, number1, number2), min(number1, number2));
-    // console.log(showOperationMessage(operationSignal, number1, number2), mul(number1, number2));
-    // console.log(showOperationMessage(operationSignal, number1, number2), div(number1, number2));
-    // console.log(showOperationMessage(operationSignal, number1, number2), mod(number1, number2));
-
     /*
     Repita desde o "PASSO 2" com as operações de subtração, multiplicação,
     divisão e resto. Crie variáveis com os nomes "subtraction",
     "multiplication", "division" e "mod".
     */
-    // ?
+   
+    // console.log(showOperationMessage(operationSignal, number1, number2), min(number1, number2));
+    // console.log(showOperationMessage(operationSignal, number1, number2), mul(number1, number2));
+    // console.log(showOperationMessage(operationSignal, number1, number2), div(number1, number2));
+    // console.log(showOperationMessage(operationSignal, number1, number2), mod(number1, number2));
 
     /*
     Repita o PASSO 2 novamente, mas passando um operador inválido, para ver se
