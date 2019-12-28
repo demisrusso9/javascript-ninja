@@ -41,6 +41,7 @@
     for (var prop in person) {
         console.log('The ' + prop + ' of person is ' + person[prop]);
         counter++;
+        //counter = Object.keys(person).length;
     }
 
     console.log('The person has ' + counter + ' properties')
@@ -52,7 +53,7 @@
     Após a função, mostrar a mensagem no console:
     'The person has more than 25 years old? [TRUE/FALSE]'
     */
-   
+
     function moreThan(idade) {
         return (person.age > idade);
     }
