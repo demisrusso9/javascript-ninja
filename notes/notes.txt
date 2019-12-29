@@ -1,0 +1,46 @@
+-------------Truthy and Falsy
+
+TRUTHY
+    {} object
+    [] array
+    1
+    'any content inside both single and double quotes'
+    and all others keys
+
+FALSY
+    0
+    -0
+    null
+    undefined
+    NaN
+    '' "" both quotes without content
+
+Literal Functions/ Objects
+program inside the object/function, final form
+
+
+---------------Objects 
+for in // use for Objects
+// Show Properties
+Object.keys(obj)
+
+transform to string
+JSON.stringify(var)
+
+---------------Array
+Array is the same as a obj
+
+array.sort() // alphabetically order
+array.reverse() // reverse the order
+array.pop() //remove the last element
+array.push() // add element on the end of an array
+
+array.unshift() // add element on the start of an array
+array.shift() // remove the first element on the array
+
+// doesn't modify the main array
+console.log(arr.concat(100)) 
+console.log(arr.slice(0, 4)) // returns a section of an array
+
+var arr = ['D', 'e', 'm', 'i', 's'];
+console.log(arr.splice(4, 1, 5)) // add or remove elements of an array
