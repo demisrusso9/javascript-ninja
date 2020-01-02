@@ -27,17 +27,19 @@
 		this.name = name;
 		this.lastName = lastName;
 		this.age = age;
-		
-		this.getFullName = function () {
-			return this.name + ' ' + this.lastName;
-		}
-		this.getAge = function () {
-			return this.age;
-		}
 
-		this.addAge = function (qnt) {
-			return this.age += qnt;
-		}
+		this.getFullName = function getFullName() {
+			return this.name + ' ' + this.lastName;
+		};
+
+		this.getAge = function getAge() {
+			return this.age;
+		};
+
+		this.addAge = function addAge() {
+			this.age += arguments[0];			
+			return this;
+		};
 	}
 
 	/*
@@ -48,39 +50,39 @@
 	*/
 
 	console.log('Novas pessoas criadas à partir de Person:');
-	var pessoa1 = new Person('demis', 'junior', 20)
-	var pessoa2 = new Person('demis', 'silva', 45)
-	var pessoa3 = new Person('dominique', 'oli', 22)
+	var demis = new Person('Demis', 'Junior', 20)
+	var russo = new Person('Russo', 'Silva', 45)
+	var dominique = new Person('Dominique', 'Oli', 22)
 
-	console.log(pessoa1)
-	console.log(pessoa2)
-	console.log(pessoa3)
+	console.log(demis)
+	console.log(russo)
+	console.log(dominique)
 
 	/*
 	Mostre no console o nome completo de cada pessoa.
 	*/
 	console.log('\nNomes das pessoas:');
-	console.log(pessoa1.getFullName())
-	console.log(pessoa2.getFullName())
-	console.log(pessoa3.getFullName())
+	console.log(demis.getFullName())
+	console.log(russo.getFullName())
+	console.log(dominique.getFullName())
 
 	/*
 	Mostre no console as idades de cada pessoa, com a frase:
 	- "[NOME COMPLETO] tem [IDADE] anos."
 	*/
 	console.log('\nIdade das pessoas:');
-	console.log(pessoa1.getFullName(), 'tem', pessoa1.getAge() + ' anos');
-	console.log(pessoa2.getFullName(), 'tem', pessoa2.getAge() + ' anos');
-	console.log(pessoa3.getFullName(), 'tem', pessoa3.getAge() + ' anos');
+	console.log(demis.getFullName(), 'tem', demis.getAge() + ' anos');
+	console.log(russo.getFullName(), 'tem', russo.getAge() + ' anos');
+	console.log(dominique.getFullName(), 'tem', dominique.getAge() + ' anos');
 
 	/*
 	Adicione alguns anos à cada pessoa, e mostre no console a nova idade de
 	cada um. A frase deverá ser no formato:
 	- "[NOME COMPLETO] agora tem [NOVA IDADE] anos."
 	*/
-	console.log('\nNova idade das pessoas:');
-	console.log(pessoa1.getFullName(), 'agora tem', pessoa1.addAge(5) + ' anos')
-	console.log(pessoa2.getFullName(), 'agora tem', pessoa2.addAge(5) + ' anos')
-	console.log(pessoa3.getFullName(), 'agora tem', pessoa3.addAge(5) + ' anos')
 
+	console.log('\nNova idade das pessoas:');
+	console.log(demis.getFullName(), 'agora tem', demis.addAge(5).getAge() + ' anos')
+	console.log(russo.getFullName(), 'agora tem', russo.addAge(5).getAge() + ' anos')
+	console.log(dominique.getFullName(), 'agora tem', dominique.addAge(5).getAge() + ' anos')
 }())
