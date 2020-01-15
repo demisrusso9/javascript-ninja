@@ -27,16 +27,21 @@
     no console:
     */
     console.log('Regex para números usando o construtor:');
-    // ?
+
+    var justNumbersRegex = new RegExp('^\\d+', 'gm')
+
+    console.log('1demis123\n2russo\n323junior'.match(justNumbersRegex));
 
     /*
     Verifique se a regex acima casa com o texto na variável `text`, mostrando o
     resultado no console. O resultado deve ser:
     "[ '10', '50' ]"
     */
+
     var text = '10 anos.\n50 discos vendidos.\nE nem 10% dos meus amigos o conhece.';
     console.log('\nNúmeros no início da linha do texto:\n' + text, '\n');
-    // ?
+
+    console.log(text.match(justNumbersRegex));
 
     /*
     - Crie uma regex que case com números no final de uma string. Atribua a
@@ -47,7 +52,10 @@
     Mostre a regex no console:
     */
     console.log('\nRegex para números somente no final das linhas:');
-    // ?
+
+    var numbersAtTheEnd = new RegExp('\\d+$', 'gm')
+
+    console.log('demis123\n12russo\njuni0r'.match(numbersAtTheEnd));
 
     /*
     Verifique se a regex acima casa com o texto na variável `otherText`,
@@ -55,9 +63,11 @@
     O resultado deve ser:
     "[ '12', '6' ]"
     */
+
     var otherText = 'Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12\n de dezembro de 1930), é um apresentador de televisão e empresário brasileiro.\n Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança\n Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o\n Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui\n um patrimônio avaliado em aproximadamente 6\n bilhões de reais.';
+
     console.log('\nNúmeros no final da linha:\n\n', otherText, '\n');
-    // ?
+    console.log(otherText.match(numbersAtTheEnd));
 
     /*
     Vamos criar um método que vai testar se uma classe CSS existe em uma
@@ -68,6 +78,7 @@
     iremos testar;
     - A função deve retornar `true` se a classe existir na marcação e `false`
     caso contrário;
+    
     - A marcação usada para testar deve ser a que está na variável `markup`
     abaixo;
     - Não altere a marcação na variável markup!
@@ -77,13 +88,30 @@
     "[RESULTADO] para a classe [CLASSE]"
     - Ex. de resposta:
     "true para a classe container"
+
     - Teste uma classe por vez (um console.log por classe).
+    
     - Lembrando que a função deve funcionar para qualquer marcação HTML e para
     qualquer classe que for testada. Os dados passados no exercício são somente
     para exemplificar.
     */
+
     var markup = '<main>\n  <div class="container">\n    <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
+
     console.log('\nQuais classes CSS existem na marcação abaixo?\n\n', markup, '\n');
 
+    function hasClass(markup, cssClass) {
+        // /class=["\'](?:[\\w\\s]+)?' + cssClass + '(?:[\\w\\s]+)?["\']/
+
+        var regex = new RegExp('class=["\'].*' + cssClass + '.*["\']')
+
+        return regex.test(markup)
+    }
+
+    var classes = ['container', 'text', 'date', 'excerpt', 'main']
+
+    classes.forEach(cssClass => {
+        console.log(hasClass(markup, cssClass) + ' para a classe ' + cssClass);
+    });
 
 })()
