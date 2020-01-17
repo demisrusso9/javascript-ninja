@@ -20,7 +20,7 @@
     var username = prompt('Qual o seu nome?') || 'Desconhecido';
     //if (!username) username = 'Desconhecido';
 
-    alert('Ben vindo ' + username);
+    alert('Bem vindo ' + username);
 
     /*
     Agora, pergunte ao usuário "Qual o seu e-mail?", atribuindo o resultado à
