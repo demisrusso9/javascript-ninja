@@ -67,8 +67,7 @@
     */
 
     $inputUsername.value = username;
-    $inputEmail.value = email;
-    $message.value = '345';
+    $inputEmail.value = email;    
 
     /*
     Adicione um listener de evento de click ao botão que faça o seguinte:
