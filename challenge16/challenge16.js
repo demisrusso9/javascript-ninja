@@ -116,4 +116,5 @@
     }
 
     console.log(newName.join(''))
+ 
 })()
