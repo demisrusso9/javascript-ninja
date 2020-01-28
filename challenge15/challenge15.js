@@ -85,4 +85,5 @@
 	console.log(demis.getFullName(), 'agora tem', demis.addAge(5).getAge() + ' anos')
 	console.log(russo.getFullName(), 'agora tem', russo.addAge(5).getAge() + ' anos')
 	console.log(dominique.getFullName(), 'agora tem', dominique.addAge(5).getAge() + ' anos')
+	
 }())
