@@ -150,5 +150,5 @@
 
     console.log(text.replace(regexDate, replaceDate));
 
-
+    
 })()
