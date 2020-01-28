@@ -191,4 +191,5 @@
     Mostre o array filtrado acima no console.
     */
     console.log('\nEstados com ID par:', filter);
+
 })();
