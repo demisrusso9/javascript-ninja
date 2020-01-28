@@ -69,7 +69,7 @@
         };
     }
 
-    var sum = calculator(10, 10);
+    var sum = calculator(18, 10);
     console.log('O resultado da soma é: ' + sum(function (a, b) {
         return a + b;
     }));
@@ -101,6 +101,4 @@
     console.log('O resto da divisão é: ' + mul(function (a, b) {
         return a % b;
     }));
-
-
 })();
