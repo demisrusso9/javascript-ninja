@@ -134,4 +134,5 @@
         //return email.match(/^[\w.+]+@\w+\.\w{2,}(?:\.\w{2})?$/g) ? true : false;
     }
 
+    
 })(window, document)
