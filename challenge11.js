@@ -45,7 +45,7 @@
     }
 
     console.log('The person has ' + counter + ' properties')
-    console.log('-------------------------------')
+    console.log('-----------------------------')
     /*
     Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto 
     criado acima) é mais velha que a idade passada por parâmetro.
