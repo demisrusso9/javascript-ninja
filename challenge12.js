@@ -131,4 +131,5 @@
 
     //Uppercase letters come first, this is why 'R' come first than 'e' (ASC)
     console.log('\nAgora em ordem alfabética:', myName.sort());
+    
 })();
