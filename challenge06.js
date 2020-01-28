@@ -17,7 +17,7 @@ console.log(showTeamPosition(3));
 console.log(showTeamPosition(6));
 console.log('-----------------------------------');
 
-// var a = 20;
+// var a = 30;
 // while (a <= 30) {
 //     console.log(a++);
 // }
