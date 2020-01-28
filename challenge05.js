@@ -17,7 +17,6 @@ var mixedArray = ['Demis', true, 93522, null, 'ok'];
 
 function book(bookName) {
     var allBooks = {
-
         'demisrusso': {
             quantidadePaginas: 30,
             autor: 'Demis Russo',
