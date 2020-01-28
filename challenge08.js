@@ -3,7 +3,7 @@ var soma = function calculateSum(a, b) {
 };
 
 var a = 5;
-var b = 15;
+var b = 10;
 
 console.log('A soma de ' + a + ' e ' + b + ' é igual a ' + soma(a, b));
 console.log('O nome da função que faz a soma é ' + soma.name + '.');
