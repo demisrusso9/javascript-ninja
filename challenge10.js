@@ -49,9 +49,9 @@
 
     console.log(operation["+"](5, 5));
     console.log(operation["-"](5, 5));
-    // console.log(operation["*"](5, 5));
-    // console.log(operation["/"](5, 5));
-    // console.log(operation["%"](5, 5));    
+    console.log(operation["*"](5, 5));
+    console.log(operation["/"](5, 5));
+    console.log(operation["%"](5, 5));    
     console.log('--------------------------------------');
 
     /*
