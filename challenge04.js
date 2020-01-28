@@ -55,6 +55,5 @@ var carro = {
 console.log(carro.addPessoas(2));
 console.log(carro.addPessoas(8));
 console.log(carro.addPessoas(2));
-console.log(carro.addPessoas(8));
 
 // ==================================== Exercises ================================
