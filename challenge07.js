@@ -29,7 +29,7 @@ while (num <= 20) {
 }
 
 var num = 10;
-console.log('-----');
+console.log('----');
 
 console.log('Números impares entre 10 e 20:');
 while (num <= 20) {
