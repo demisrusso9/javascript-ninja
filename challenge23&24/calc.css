@@ -1,0 +1,47 @@
+.calculator {
+    height: 180px;
+    width: 150px;
+    margin: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+}
+
+#input {
+    width: 120px;
+    padding: 10px;    
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.numbers {    
+    width: 100px;    
+    float: left;    
+}
+
+.numbers *{
+    margin: 2px;
+    color:black;
+    height: 25px;
+    width: 25px;    
+}
+
+.operator {
+    float: right;
+    position: absolute;
+    right: -40px;
+    width: 100px;        
+}
+
+.operator *{
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+    display: block;
+}
+
+.calc {
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+}
