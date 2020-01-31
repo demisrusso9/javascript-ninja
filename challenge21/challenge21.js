@@ -18,30 +18,39 @@
     */
 
     var $input = document.querySelector('input[type=text]');
-
     var $btnStart = document.querySelector('[data-start="btn-start"]');
     var $btnStop = document.querySelector('[data-stop="btn-stop"]');
     var $btnReset = document.querySelector('[data-reset="btn-reset"]');
-
     var temp;
 
-    $btnStart.addEventListener('click', () => {
-        function timer() {
-            $input.value++;
-            temp = setTimeout(timer, 1000);
-        }
+    function initialize() {
+        initEvents();
+    }
 
-        timer();
-    })
+    function initEvents() {
+        $btnStart.addEventListener('click', () => {
+            timer();
+        })
 
-    $btnStop.addEventListener('click', () => {
-        clearTimeout(temp)
-    })
+        $btnStop.addEventListener('click', () => {
+            clearTime(temp)
+        })
 
-    $btnReset.addEventListener('click', () => {
-        $input.value = 0;
-        clearTimeout(temp)
-    })
+        $btnReset.addEventListener('click', () => {
+            $input.value = 0;
+            clearTime(temp)
+        })
+    }
 
-    
+    function timer() {
+        $input.value++;
+        temp = setTimeout(timer, 1000);
+    }
+
+    function clearTime(value) {
+        clearTimeout(value)
+    }
+
+    initialize();
+
 }(window, document))
