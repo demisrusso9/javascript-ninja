@@ -37,15 +37,15 @@ function book(bookName) {
     };
 
     if (bookName) {
-        console.log('O livro ' + bookName + ' tem ' + allBooks[bookName].quantidadePaginas + ' paginas');
-        console.log('O autor do livro ' + bookName + ' é ' + allBooks[bookName].autor);
-        console.log('O livro ' + bookName + ' foi publicado pela editora ' + allBooks[bookName].editora);        
+        console.log(`O livro ${bookName} tem ${allBooks[bookName].quantidadePaginas}  paginas`);
+        console.log(`O autor do livro ${bookName} é ${allBooks[bookName].autor}`);
+        console.log(`O livro ${bookName} foi publicado pela editora ${allBooks[bookName].editora}`);
         return allBooks[bookName];
     }
 
     return allBooks;
 }
 
-console.log(book('demisrusso'));
+console.log(book('lagum'));
 
 // ==================================== Exercises ================================
