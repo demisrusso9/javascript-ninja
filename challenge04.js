@@ -31,29 +31,29 @@ var carro = {
     },
 
     obterMarcaModelo() {
-        return 'Esse Carro é um ' + this.obterMarca() + ' ' + this.obterModelo();
+        return `Esse Carro é um ${this.obterMarca()} ${this.obterModelo()}`;
     },
 
     addPessoas(num) {
         var totalPessoas = carro.quantidadePessoas + num;
         var cabemPessoas = carro.assentos - carro.quantidadePessoas;
-        var singular = cabemPessoas === 1 ? ' pessoa' : ' pessoas';
+        var singular = cabemPessoas === 1 ? 'pessoa' : 'pessoas';
 
         if (carro.quantidadePessoas === carro.assentos) {
             return 'O carro já está lotado!'
         }
 
         if (totalPessoas > carro.assentos) {
-            return 'Só cabem mais ' + cabemPessoas + singular;
+            return `Só cabem mais ${cabemPessoas} ${singular}`;
         }
 
         carro.quantidadePessoas += num;
-        return 'Já temos ' + carro.quantidadePessoas + ' pessoas no carro!'
+        return `Já temos ${carro.quantidadePessoas} pessoas no carro!'`
     }
 }
 
-console.log(carro.addPessoas(2));
-console.log(carro.addPessoas(8));
-console.log(carro.addPessoas(2));
+console.log(carro.obterMarcaModelo());
+console.log(carro.addPessoas(3));
+console.log(carro.addPessoas(3));
 
 // ==================================== Exercises ================================
