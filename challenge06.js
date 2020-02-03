@@ -7,7 +7,7 @@ var teams = ['flamengo', 'gremio', 'sp', 'botafogo', 'cruzeiro'];
 
 function showTeamPosition(num) {
     if (num > 0 && num <= 4)
-        return 'O time que está em ' + num + 'º lugar é o ' + teams[num - 1] + '.';
+        return `O time que está em ${num}º lugar é o ${teams[num - 1]}.`;
     return 'Não temos a informação do time que está nessa posição.';
 }
 
@@ -48,10 +48,10 @@ function convertToHex(color) {
             break;
 
         default:
-            return 'Não temos o equivalente hexadecimal para ' + color + '.';
+            return `Não temos o equivalente hexadecimal para ${color}.`;
     }
-    
-    return 'O hexadecimal para a cor ' + color + ' é ' + hexa;    
+
+    return `O hexadecimal para a cor ${color} é ${hexa}`;
 }
 
 console.log(convertToHex('red'));
